@@ -59,3 +59,39 @@ a {
 .contact-info {
   padding: 3em 1.5em;
 }
+
+.info-line {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  padding: 1em 2em;
+  margin-top: 2em;
+  border-radius: 20px;
+  background: #313438;
+  box-shadow: 6px 6px 12px #2d2f33, -6px -6px 12px #35393d;
+}
+
+p {
+  margin: 0;
+  padding-left: 2em;
+}
+
+.icon-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(66, 159, 124, 1) 0%,
+    rgba(161, 193, 78, 1) 100%
+  );
+  border-radius: 100px;
+  padding: 0.5em;
+}
+
+#location {
+  padding: 0.5em 0.6em;
+}
+
+.edit-contact {
+  padding: 1.5em 3.5em;
+  text-align: center;
+}
