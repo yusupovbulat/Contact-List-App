@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact List App</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="{% static 'contact/style.css' %}" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
@@ -26,7 +27,7 @@
             placeholder="Search"
           />
         </form>
-        <a href="edit.html">
+        <a href="{% url 'add-contact' %}">
           <i class="fas fa-plus-circle"></i>
         </a>
       </header>
