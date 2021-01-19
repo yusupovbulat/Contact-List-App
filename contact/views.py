@@ -2,11 +2,10 @@ from django.shortcuts import render, redirect
 
 from .models import Contact
 
-# Create your views here.
-
 
 def index(request):
-    return render(request, "index.html")
+    contacts = Contact.objects.all()
+    return render(request, "index.html", {'contacts': contacts})
 
 
 def add_contact(request):
@@ -15,7 +14,7 @@ def add_contact(request):
             full_name=request.POST['fullname'],
             relationship=request.POST['relationship'],
             email=request.POST['email'],
-            phone_number=request.POST['phone-number'],
+            phone_number=request.POST['phone'],
             address=request.POST['address']
         )
         new_contact.save()
